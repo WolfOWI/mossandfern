@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import PlantDetailsPage from "./pages/PlantDetailsPage";
 import AdminDash from "./pages/AdminDash";
 import "./App.css";
+// index.js or App.js
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
