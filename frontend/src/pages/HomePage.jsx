@@ -28,7 +28,7 @@ function HomePage() {
       <NavigationBar />
       <Container className="mt-6 mb-24">
         <Row>
-          <h1> Shop for Plants </h1>
+          <h1 className="text-green-950 fw-bold">Listed Plants</h1>
         </Row>
 
         <Row>
@@ -46,7 +46,7 @@ function HomePage() {
               </Col>
             ))
           ) : (
-            <p>Loading Plants</p>
+            <p>Loading Plant Products</p>
           )}
         </Row>
       </Container>
