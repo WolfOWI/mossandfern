@@ -46,7 +46,9 @@ function HomePage() {
               </Col>
             ))
           ) : (
-            <p>Loading Plant Products</p>
+            <div className="w-full flex justify-center items-center mt-5">
+              <h3 className="text-green-700">Loading Plants</h3>
+            </div>
           )}
         </Row>
       </Container>
