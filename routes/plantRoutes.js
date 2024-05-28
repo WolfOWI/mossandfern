@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Plant = require("../models/Plant");
 
+// GET ROUTES
+// ---------------------------------------------
 // Get all plants
 router.get("/", async (req, res) => {
   try {
@@ -25,5 +27,6 @@ router.get("/:id", async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+// ---------------------------------------------
 
 module.exports = router;
