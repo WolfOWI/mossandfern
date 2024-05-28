@@ -29,4 +29,18 @@ router.get("/:id", async (req, res) => {
 });
 // ---------------------------------------------
 
+// PUT ROUTES
+// ---------------------------------------------
+router.put("/:id", async (req, res) => {
+  try {
+    const plant = await Plant.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    res.status(200).json(plant);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+// ---------------------------------------------
+
 module.exports = router;

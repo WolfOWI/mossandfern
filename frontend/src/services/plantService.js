@@ -1,31 +1,45 @@
-// import axios from "axios";
+import axios from "axios";
 
-// const API_URL = "http://localhost:5001/plants";
+// URL FOR API CALLS
+const baseUrl = "http://localhost:5001/plants";
 
+// GET METHODS
+// ------------------------------------------------------
 // Get array of all plants
-export function getAllPlants() {
-  return fetch("http://localhost:5001/plants")
-    .then((res) => {
-      return res.json();
-    })
-    .catch((err) => {
-      throw err;
-    });
-}
+export const getAllPlants = async () => {
+  try {
+    const response = await axios.get(`${baseUrl}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error getting all plants", error);
+    throw error;
+  }
+};
 
 // Get plant by ID
-export function getPlantById(plantId) {
-  return fetch(`http://localhost:5001/plants/${plantId}`)
-    .then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      throw new Error("Failed to fetch specific plant.");
-    })
-    .catch((err) => {
-      throw err;
-    });
-}
+export const getPlantById = async (id) => {
+  try {
+    const response = await axios.get(`${baseUrl}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error getting plant by ID", error);
+    throw error;
+  }
+};
+// ------------------------------------------------------
+
+// UPDATE METHODS
+// ------------------------------------------------------
+export const updatePlant = async (id, updatedPlant) => {
+  try {
+    const response = await axios.put(`${baseUrl}/${id}`, updatedPlant);
+    return response.data;
+  } catch (error) {
+    console.error("Error updating plant", error);
+    throw error;
+  }
+};
+// ------------------------------------------------------
 
 // export const createPlant = async (plantData) => {
 //   const response = await axios.post(API_URL, plantData);

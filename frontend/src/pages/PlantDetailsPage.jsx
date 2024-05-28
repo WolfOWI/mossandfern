@@ -3,7 +3,7 @@
 // Import
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getPlantById } from "../services/plantService";
+import { getPlantById, updatePlant } from "../services/plantService";
 import NavigationBar from "../components/NavigationBar";
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/esm/Button";
@@ -57,10 +57,14 @@ function PlantDetailsPage() {
 
   // When Save Button is clicked (after editing)
   const handleSaveClick = () => {
-    // Logic to save the updated plant details
-    // You will likely want to call an update service here
-    setSelectedPlant(formValues);
-    setIsEditing(false);
+    updatePlant(plantId, formValues)
+      .then((updatedPlant) => {
+        setSelectedPlant(updatedPlant);
+        setIsEditing(false);
+      })
+      .catch((err) => {
+        console.log("Error updating plant", err);
+      });
   };
 
   return (
