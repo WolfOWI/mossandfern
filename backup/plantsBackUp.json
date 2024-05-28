@@ -1,0 +1,173 @@
+[
+  {
+    "_id": {
+      "$oid": "66557854e8964e32d8366316"
+    },
+    "title": "Aloe Vera",
+    "price": 230,
+    "description": "Aloe Vera is a succulent, evergreen, perennial often grown for medicinal purposes. It makes an excellent addition to garden beds, rockeries and succulent gardens, but is equally at home in a pot on a sunny windowsill, patio or balcony.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/10/ALOE-PERI-PERI-PRODUCT.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "6655789de8964e32d8366317"
+    },
+    "title": "Philodendron Selloum",
+    "price": 540,
+    "description": "A lush indoor floor plant with large, dark green, deeply serrated leaves that will lend a tropical look to large interior spaces.  Grow them in pots in well-lit bedrooms, lounges, offices and foyers or in a protected spot in the garden.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/11/PHILODENDRON-SELLOUM.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "665583fbe1db7eb0a775ccd6"
+    },
+    "title": "Hybrid Ice Plant",
+    "price": 360,
+    "description": "A vigorous succulent groundcover with large, magnificently bright variations of flowers throughout spring and summer. Plant them for a magnificent colour pop in rockeries, succulent gardens, borders and pots.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2022/11/DELOSPERMA-HYBRIDS15CM.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "66558401e1db7eb0a775ccd7"
+    },
+    "title": "Giant Blue",
+    "price": 95,
+    "description": "This rosette-shaped succulent offers year round color and interest with its ruffled, blue-green leaves, outlined  in bright pink. Colors intensify as the plants mature. Plant them in rockeries, pots, beds and borders, en masse or in mixed plantings with other water smart plants.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/08/ECHEVERIA-GIANT-BLUE-17CM.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "66558407e1db7eb0a775ccd9"
+    },
+    "title": "Dwarf Morning Glory",
+    "price": 110,
+    "description": "This beauty will certainly blow your mind with its striking, true-blue flowers borne right through summer amid fuzzy, silver-green foliage. It has a mounding and trailing habit and is excellent as groundcover or filler in beds and trailing from pots and baskets.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/07/Evolvulus-Blue-My-Mind-1.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "6655840ce1db7eb0a775ccda"
+    },
+    "title": "Spekboom",
+    "price": 45,
+    "description": "Very sculptural, evergreen succulent plants that can be used as low hedges, for screening, in rockeries, containers and even as bonsai. It is covered in dainty pink flowers during spring and early summer.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/07/PORTULACARIA-AFRA.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "66558411e1db7eb0a775ccdb"
+    },
+    "title": "Campfire Crassula",
+    "price": 420,
+    "description": "A stunning indigenous succulent that adds permanent colour to pots, beds and rockeries. Tiny, star-like flowers, that attract bees and butterflies, are borne on tall stems in summer.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/07/Crassula-capitela-Campfire-1.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b502e1db7eb0a775ccdd"
+    },
+    "title": "Magenta Azalea",
+    "price": 140,
+    "description": "A fast-growing shrub and prolific flower with magnificent single magenta coloured flowers throughout spring and summer.   Use in beds, pots and as hedges.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2022/02/AZALEA-MAGENTA-10L.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "6655b508e1db7eb0a775ccde"
+    },
+    "title": "Honey-bell Bush",
+    "price": 780,
+    "description": "A dainty-looking evergreen shrub, covered in white or lilac flowers from September to February. Use in beds and borders or as low formal or informal hedges and screens.  The standard version looks really lovely in containers on patios, verandas and balconies.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/06/Freylinia-tropica-White-or-Blue-copy.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b50de1db7eb0a775ccdf"
+    },
+    "title": "Fiddle-leaf Fig",
+    "price": 210,
+    "description": "This little stunner is proving to be even more popular than its larger cousin, due to its compact size, yet equally gorgeous, lush and and large dark green leaves.  Its leaves are packed more tightly though, and it will only grow to a height of about 1m.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2023/11/FICUS-LYRATA-BAMBINO.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b512e1db7eb0a775cce0"
+    },
+    "title": "Spider Plant",
+    "price": 30,
+    "description": "Probably the most popular house plant in the world with its softly curving rosettes of variegated leaves and little ‘pups’ or plantlets drooping down or spreading from the mother plant. It can be grown indoors in bright light, or on patios and balconies, where it can cascade from pots or hanging baskets.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2021/02/CHLOROPHYTUM-COMOSUM.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "6655b518e1db7eb0a775cce1"
+    },
+    "title": "Dragon tree",
+    "price": 680,
+    "description": "Very reliable sculptural plants with straight stems that are elegantly topped with a cluster of green leaves with purple-red margins. Ideally, show off their striking shape by placing them in a trendy container or basket against a plain background.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/11/DRACAENA-AMERICANA-1-STEM-1.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b521e1db7eb0a775cce2"
+    },
+    "title": "Blue Star Fern",
+    "price": 175,
+    "description": "An attractive, evergreen, blue-green leaved fern with striking orange spores. It is a gorgeous addition to any indoor space. Ideal to grow in atriums and terrariums with other exotics.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/06/Phlebodium-aureum-mandaianum.png",
+    "inStock": false
+  },
+  {
+    "_id": {
+      "$oid": "6655b528e1db7eb0a775cce3"
+    },
+    "title": "Guzmania",
+    "price": 370,
+    "description": "A very interesting and colourful pineapple look-alike with thin, bright green leave rosettes, from the centre of which vibrant, star shaped bracts in shades of orange, red, pink, purple and yellow are produced.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2021/05/GUZMANIA-MIXED-NEW.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b52ee1db7eb0a775cce4"
+    },
+    "title": "Dwarf Sacred Bamboo",
+    "price": 69,
+    "description": "A hardy, semi-deciduous shrub with a round habit. The leaves are multi-coloured with stunning displays in autumn. It bears small white flowers in summer, followed by red berries.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/06/Nandina-domestica-pygmaea-4l.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655b74ee1db7eb0a775cce5"
+    },
+    "title": "Sunset Boulevard",
+    "price": 100,
+    "description": "This prolifically flowering shrub shows off its dark pink flowers from spring, through summer and into early autumn.  This plant does very well in pots and containers on patios and balconies – perfect for that urban greening vibe.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/08/Hebe-speciose-Sunset-Boulevard.png",
+    "inStock": true
+  },
+  {
+    "_id": {
+      "$oid": "6655c6547c152132c4161e7e"
+    },
+    "title": "Garden Mum",
+    "price": 80,
+    "description": "Available in an incredible selection of long-lasting, showy blooms from spring right through to autumn. Plant these in the garden after flowering to flower next season.",
+    "thumbnail": "https://lifestyle.co.za/wp-content/uploads/2020/06/CHRYSANTHEMUM-MORIFOLIUM.png",
+    "inStock": true,
+    "__v": 0
+  }
+]

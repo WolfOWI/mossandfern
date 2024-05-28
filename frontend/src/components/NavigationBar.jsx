@@ -10,7 +10,7 @@ import mossLogo from "../assets/logo/mafLogo.png";
 
 import { createPlant } from "../services/plantService";
 
-function NavigationBar() {
+function NavigationBar({ onPlantAdded }) {
   // States
   const [modalShow, setModalShow] = useState(false);
   const [isFormFilled, setIsFormFilled] = useState(false);
@@ -70,6 +70,11 @@ function NavigationBar() {
       console.log("Plant created successfully:", newPlant);
       handleClear();
       handleModalClose();
+      if (onPlantAdded) {
+        setTimeout(() => {
+          onPlantAdded(); // Refresh the plant list on the homepage and scroll to bottom
+        }, 300);
+      }
     } catch (error) {
       console.error("Error creating plant:", error);
     }

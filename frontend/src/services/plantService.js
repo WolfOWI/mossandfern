@@ -3,7 +3,7 @@ import axios from "axios";
 // URL FOR API CALLS
 const baseUrl = "http://localhost:5001/plants";
 
-// GET METHODS
+// READ METHODS
 // ------------------------------------------------------
 // Get array of all plants
 export const getAllPlants = async () => {

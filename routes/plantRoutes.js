@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Plant = require("../models/Plant");
 
-// GET ROUTES
+// GET ROUTES (READ)
 // ---------------------------------------------
 // Get all plants
 router.get("/", async (req, res) => {
@@ -29,7 +29,7 @@ router.get("/:id", async (req, res) => {
 });
 // ---------------------------------------------
 
-// POST ROUTES
+// POST ROUTES (CREATE)
 // ---------------------------------------------
 // Create a new plant product
 router.post("/create", async (req, res) => {
@@ -51,7 +51,7 @@ router.post("/create", async (req, res) => {
 });
 // ---------------------------------------------
 
-// PUT ROUTES
+// PUT ROUTES (UPDATE)
 // ---------------------------------------------
 router.put("/:id", async (req, res) => {
   try {
@@ -65,7 +65,7 @@ router.put("/:id", async (req, res) => {
 });
 // ---------------------------------------------
 
-// DELETE ROUTES
+// DELETE ROUTES (DELETE)
 // ---------------------------------------------
 router.delete("/:id", async (req, res) => {
   try {
