@@ -41,17 +41,15 @@ export const updatePlant = async (id, updatedPlant) => {
 };
 // ------------------------------------------------------
 
-// export const createPlant = async (plantData) => {
-//   const response = await axios.post(API_URL, plantData);
-//   return response.data;
-// };
-
-// export const updatePlant = async (id, plantData) => {
-//   const response = await axios.put(`${API_URL}/${id}`, plantData);
-//   return response.data;
-// };
-
-// export const deletePlant = async (id) => {
-//   const response = await axios.delete(`${API_URL}/${id}`);
-//   return response.data;
-// };
+// DELETE METHODS
+// ------------------------------------------------------
+export const deletePlant = async (id) => {
+  try {
+    const response = await axios.delete(`${baseUrl}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error deleting plant", error);
+    throw error;
+  }
+};
+// ------------------------------------------------------

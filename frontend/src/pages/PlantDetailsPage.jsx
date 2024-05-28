@@ -1,9 +1,9 @@
 // Event Info Page (Specific)
 
 // Import
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getPlantById, updatePlant } from "../services/plantService";
+import { getPlantById, updatePlant, deletePlant } from "../services/plantService";
 import NavigationBar from "../components/NavigationBar";
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/esm/Button";
@@ -13,6 +13,7 @@ import Form from "react-bootstrap/esm/Form";
 function PlantDetailsPage() {
   const { plantId } = useParams(); // URL plant ID (to get selected plant details)
   const [selectedPlant, setSelectedPlant] = useState("");
+  const navigate = useNavigate(); // Redirect after deleting
 
   // Editing & Form Values when editing
   const [isEditing, setIsEditing] = useState(false);
@@ -64,6 +65,17 @@ function PlantDetailsPage() {
       })
       .catch((err) => {
         console.log("Error updating plant", err);
+      });
+  };
+
+  // When Delete Button is clicked
+  const handleDeleteClick = () => {
+    deletePlant(plantId)
+      .then(() => {
+        navigate("/"); // Redirect to home page after deleting
+      })
+      .catch((err) => {
+        console.log("Error deleting plant", err);
       });
   };
 
@@ -167,7 +179,11 @@ function PlantDetailsPage() {
                     Edit
                   </Button>{" "}
                   <div className="w-4"> {/* Spacer */} </div>
-                  <Button variant="danger" className="font-sans fw-bold px-6 flex items-center">
+                  <Button
+                    variant="danger"
+                    className="font-sans fw-bold px-6 flex items-center"
+                    onClick={handleDeleteClick}
+                  >
                     <svg
                       className="w-6 fill-white mr-2"
                       xmlns="http://www.w3.org/2000/svg"
