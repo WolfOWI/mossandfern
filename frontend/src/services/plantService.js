@@ -28,8 +28,23 @@ export const getPlantById = async (id) => {
 };
 // ------------------------------------------------------
 
+// CREATE METHODS
+// ------------------------------------------------------
+// Create a new plant
+export const createPlant = async (plantData) => {
+  try {
+    const response = await axios.post(`${baseUrl}/create`, plantData);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating plant", error);
+    throw error;
+  }
+};
+// ------------------------------------------------------
+
 // UPDATE METHODS
 // ------------------------------------------------------
+// Update plant (based on ID)
 export const updatePlant = async (id, updatedPlant) => {
   try {
     const response = await axios.put(`${baseUrl}/${id}`, updatedPlant);
@@ -43,6 +58,7 @@ export const updatePlant = async (id, updatedPlant) => {
 
 // DELETE METHODS
 // ------------------------------------------------------
+// Delete a plant (based on ID)
 export const deletePlant = async (id) => {
   try {
     const response = await axios.delete(`${baseUrl}/${id}`);

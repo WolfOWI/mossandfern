@@ -29,6 +29,28 @@ router.get("/:id", async (req, res) => {
 });
 // ---------------------------------------------
 
+// POST ROUTES
+// ---------------------------------------------
+// Create a new plant product
+router.post("/create", async (req, res) => {
+  const { title, price, description, thumbnail, inStock } = req.body;
+
+  try {
+    const plant = new Plant({
+      title,
+      price,
+      description,
+      thumbnail,
+      inStock,
+    });
+    await plant.save();
+    res.status(201).json(plant);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+// ---------------------------------------------
+
 // PUT ROUTES
 // ---------------------------------------------
 router.put("/:id", async (req, res) => {
